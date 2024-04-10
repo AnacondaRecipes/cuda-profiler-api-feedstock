@@ -29,7 +29,7 @@ build:
 
 requirements:
   build:
-    - arm-variant * {{ arm_variant_type }}  # [aarch64]
+    #- arm-variant * {{ arm_variant_type }}  # [aarch64]
   host:
     - cuda-version {{ cuda_version }}
   run:
