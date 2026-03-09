@@ -2,12 +2,10 @@
 {% set version = "12.9.79" %}
 {% set cuda_version = "12.9" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
-{% set platform = "linux-ppc64le" %}  # [ppc64le]
 {% set platform = "linux-sbsa" %}  # [aarch64 and arm_variant_type=="sbsa"]
 {% set platform = "linux-aarch64" %}  # [aarch64 and arm_variant_type=="tegra"]
 {% set platform = "windows-x86_64" %}  # [win]
 {% set target_name = "x86_64-linux" %}  # [linux64]
-{% set target_name = "ppc64le-linux" %}  # [ppc64le]
 {% set target_name = "sbsa-linux" %}  # [aarch64 and arm_variant_type=="sbsa"]
 {% set target_name = "aarch64-linux" %}  # [aarch64 and arm_variant_type=="tegra"]
 {% set target_name = "x64" %}  # [win]
@@ -26,8 +24,8 @@ source:
   sha256: b05519f8ce4f02167bfc859358f62eb771d89ac2af3a6952a82317f2af4bc5bd  # [win]
 
 build:
-  number: 1
-  skip: true  # [osx or ppc64le]
+  number: 0
+  skip: true  # [osx]
 
 requirements:
   build:
@@ -52,10 +50,12 @@ about:
   license_file: LICENSE
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_url: https://docs.nvidia.com/cuda/eula/index.html
+  license_family: Other
   summary: CUDA Profiler API Headers.
   description: |
     CUDA Profiler API Headers.
   doc_url: https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#range-replay-define-range
+  dev_url: https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#range-replay-define-range
 
 extra:
   recipe-maintainers:
