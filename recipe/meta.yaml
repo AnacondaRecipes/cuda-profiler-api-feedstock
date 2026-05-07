@@ -48,6 +48,7 @@ about:
   license_file: LICENSE
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_url: https://docs.nvidia.com/cuda/eula/index.html
+  license_family: Other
   summary: CUDA Profiler API Headers.
   description: |
     CUDA Profiler API Headers.
@@ -55,7 +56,5 @@ about:
   dev_url: https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#range-replay-define-range
 
 extra:
-  skip-lints:
-    - license_file_overspecified
   recipe-maintainers:
     - conda-forge/cuda
