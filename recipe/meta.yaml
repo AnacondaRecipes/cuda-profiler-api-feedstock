@@ -56,5 +56,7 @@ about:
   dev_url: https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#range-replay-define-range
 
 extra:
+  skip-lints:
+    - deprecate_license_url
   recipe-maintainers:
     - conda-forge/cuda
